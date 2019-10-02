@@ -18,7 +18,10 @@ public class App
     			 .addConverterFactory(GsonConverterFactory.create())
     			 .build();
     			 IpmaService service = retrofit.create(IpmaService.class);
-    			 Call<IpmaCityForecast> callSync = service.getForecastForACity(1010500);
+    			 
+    			     			 
+    			 int City_ID = 1010500;
+				Call<IpmaCityForecast> callSync = service.getForecastForACity(City_ID );
     			 try {
     			 Response<IpmaCityForecast> apiResponse = callSync.execute();
     			 IpmaCityForecast forecast = apiResponse.body();

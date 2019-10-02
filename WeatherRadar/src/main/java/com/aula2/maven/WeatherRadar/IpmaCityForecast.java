@@ -53,6 +53,7 @@ class IpmaCityForecast {
         public Integer getGlobalIdLocal() {
             return globalIdLocal;
         }
+        
 
         public void setGlobalIdLocal(Integer globalIdLocal) {
             this.globalIdLocal = globalIdLocal;
